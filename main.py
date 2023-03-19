@@ -19,7 +19,7 @@ config = {
     'port': os.getenv('db_port'),
 }
 
-db_connection_name=os.getenv('db_connection_name'),
+db_connection_name=os.getenv('db_connection_name')
 
 # Ruta para la API en caso no se administre id
 @app.route('/api/', methods=['GET'])
