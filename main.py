@@ -3,11 +3,13 @@ import pymysql.cursors
 import os
 from dotenv import load_dotenv
 import json
+from flask_cors import CORS
 
 
 load_dotenv()
 
 app = Flask(__name__)
+CORS(app)
 
 config = {
     'user': os.getenv('db_user'),
